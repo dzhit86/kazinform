@@ -1,12 +1,11 @@
 
-
 // Sliders
 const sliderPhoto = new Swiper('#swiperPhoto', {
     direction: 'horizontal',
     loop: true,
     spaceBetween: 20,
     pagination: false,
-    autoplay: true,
+    autoplay: false,
     speed: 500,
     navigation: {
       nextEl: '.swiper-button-next',
@@ -15,17 +14,18 @@ const sliderPhoto = new Swiper('#swiperPhoto', {
     breakpoints: {
         // when window width is >= 320px
         320: {
-          slidesPerView: 1.2,
+          slidesPerView: 1,
           spaceBetween: 20
         },
         // when window width is >= 640px
         640: {
-          slidesPerView: 2.2,
-          spaceBetween: 20
+          slidesPerView: 2,
+          spaceBetween: 20,
+          navigation: false
         },
         // when window width is >= 640px
         1024: {
-          slidesPerView: 3.2,
+          slidesPerView: 3,
           spaceBetween: 20
         }
       }
